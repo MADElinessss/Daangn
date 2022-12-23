@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+<<<<<<< HEAD
+    android:id="@+id/homefrag"
+=======
+>>>>>>> 450307fa3c4f9b46661535ec9496c55390f198a7
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+<<<<<<< HEAD
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dongne"
+        tools:layout_editor_absoluteX="16dp"
+        tools:listitem="@layout/item_data" />
+
+    <ImageButton
+=======
+        android:layout_height="664dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+>>>>>>> 450307fa3c4f9b46661535ec9496c55390f198a7
+        android:id="@+id/btn_search"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="160dp"
+<<<<<<< HEAD
+        android:backgroundTint="#03FFFFFF"
+        android:layout_marginTop="12dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintStart_toEndOf="@+id/btn_dongne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_search" />
+
+    <ImageButton
+=======
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_dongne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageView
+>>>>>>> 450307fa3c4f9b46661535ec9496c55390f198a7
+        android:id="@+id/btn_category"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+<<<<<<< HEAD
+        android:stateListAnimator="@null"
+        android:backgroundTint="#03FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btn_alarm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tab_icon_category" />
+
+    <ImageButton
+        android:id="@+id/btn_alarm"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#03FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_notification" />
+=======
+        app:layout_constraintEnd_toStartOf="@+id/btn_alarm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_category" />
+
+    <ImageView
+        android:id="@+id/btn_alarm"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_alarm" />
+>>>>>>> 450307fa3c4f9b46661535ec9496c55390f198a7
+
+    <Button
+        android:id="@+id/btn_dongne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#03FFFFFF"
+        android:drawableRight="@drawable/ic_expand_more_outline_24"
+        android:stateListAnimator="@null"
+        android:text="화양동"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

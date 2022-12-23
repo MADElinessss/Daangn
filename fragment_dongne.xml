@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_dongne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="93dp"
+        android:text="화양동 V"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dongne"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F9F9F9"
+            app:srcCompat="@drawable/resize_ic_search" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9F9F9"
+            app:srcCompat="@drawable/resize_ic_user_profile_placeholder" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F9F9F9"
+            app:srcCompat="@drawable/resize_alarm" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_dongne_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:stateListAnimator="@null"
+                android:text="주제"
+                android:drawableLeft="@drawable/resize_ic_user_profile_placeholder"/>
+            <Button
+                android:id="@+id/btn_dongne_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:stateListAnimator="@null"
+                android:text="반짝모임"
+                android:drawableLeft="@drawable/resize_ic_category"/>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="411dp"
+        android:layout_height="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

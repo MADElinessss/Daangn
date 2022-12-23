@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EEEE"
+    android:backgroundTint="#F6F6F6">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F9F9F9"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9F9F9"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="중고거래 카테고리"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F9F9F9"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/ic_filter_outline_18" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="401dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon0"
+                android:stateListAnimator="@null"
+                android:text="인기매물" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon1"
+                android:stateListAnimator="@null"
+                android:text="디지털기기" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_ic_kettle"
+                android:stateListAnimator="@null"
+                android:text="생활가전" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon2"
+                android:stateListAnimator="@null"
+                android:text="가구/인테리어" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon4"
+                android:stateListAnimator="@null"
+                android:text="생활/주방" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon3"
+                android:stateListAnimator="@null"
+                android:text="유아동" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_ic_childbook"
+                android:stateListAnimator="@null"
+                android:text="유아도서" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon5"
+                android:stateListAnimator="@null"
+                android:text="여성의류" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon6"
+                android:stateListAnimator="@null"
+                android:text="여성잡화" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon8"
+                android:stateListAnimator="@null"
+                android:text="남성패션/잡화" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon7"
+                android:stateListAnimator="@null"
+                android:text="뷰티/미용" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon9"
+                android:stateListAnimator="@null"
+                android:text="스포츠/레저" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon10"
+                android:stateListAnimator="@null"
+                android:text="취미/게임/음반" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon11"
+                android:stateListAnimator="@null"
+                android:text="도서" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_ic_car"
+                android:stateListAnimator="@null"
+                android:text="중고차" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_ticket"
+                android:stateListAnimator="@null"
+                android:text="티켓/교환권" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_can"
+                android:stateListAnimator="@null"
+                android:text="가공식품" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/category_icon12"
+                android:stateListAnimator="@null"
+                android:text="반려동물용품" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_ic_fruit"
+                android:stateListAnimator="@null"
+                android:text="식물" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9F9F9"
+                android:drawableTop="@drawable/resize_box"
+                android:stateListAnimator="@null"
+                android:text="기타 중고물품" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
